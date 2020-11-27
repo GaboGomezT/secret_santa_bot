@@ -1,5 +1,6 @@
 # secret santa bot
 
+Do you want to organize a secret santa between you and your friends but COVID is stopping you? Use this bot to randomly choose secret santas and send everyone the name of the person they should send their gift to by SMS.
 ### You must create a json file named config.json and it must contain these keys. These values are obtained when configuring your twilio account, except the country_code. That one depends on the number that will recieve the messages. It assumes they're all from the same country.
 {
     "account_sid": "XXXXXXXXXXX",
