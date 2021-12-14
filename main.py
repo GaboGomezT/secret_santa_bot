@@ -1,7 +1,7 @@
 from twilio.rest import Client
 from random import choice
 import json
-
+import time
 with open("config.json") as f:
     config = json.load(f)
 with open("contacts.json") as f:
@@ -21,9 +21,13 @@ def reset_contacts():
 
 
 def take_name():
+    print("Taking a name")
     for name, value in contacts.items():
-        filtered_contacts = {k: v for k, v in contacts.items() if v["taken"] is False}
+        print(f"{name}'s turn")
+        filtered_contacts = {k: v for k, v in contacts.items() if v["taken"] is False and name not in v["family"]}
+        print(f"{filtered_contacts=}")
         random_choice = choice(list(filtered_contacts.items()))
+        print(f"{random_choice=}")
         contacts[name]["pair"] = random_choice[0]
         contacts[random_choice[0]]["taken"] = True
         if random_choice[0] == name:
@@ -34,7 +38,9 @@ def take_name():
 def send_messages():
     for name, value in contacts.items():
         # Feel free to customize this default message
-        message = f"Hello {name}! Your are {value['pair']}'s secret santa! Make sure to give them a thoughtful gift!'"
+        message = f"¡Hola {name}! ¡Para el intercambio te toca {value['pair']}!"
+        print(f"{message=}, number={value['number']}")
+        time.sleep(5)
         client.messages.create(
             to=f"{country_code}{value['number']}", from_=twilio_number, body=message
         )

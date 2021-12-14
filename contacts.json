@@ -1,26 +1,115 @@
 {
-    "Person1": {
+    "Abdias": {
         "number": "1111111111",
-        "taken": false
+        "taken": false,
+        "family": [
+            "Abdias",
+            "Frida",
+            "Neda",
+            "Viridiana"
+        ]
     },
-    "Person2": {
+    "Adrian": {
         "number": "1111111111",
-        "taken": false
+        "taken": false,
+        "family": []
     },
-    "Person3": {
+    "Elu": {
         "number": "1111111111",
-        "taken": false
+        "taken": false,
+        "family": [
+            "Elu",
+            "Rogelio",
+            "Leo",
+            "Rosario"
+        ]
     },
-    "Person4": {
+    "Frida": {
         "number": "1111111111",
-        "taken": false
+        "taken": false,
+        "family": [
+            "Abdias",
+            "Frida",
+            "Neda",
+            "Viridiana"
+        ]
     },
-    "Person5": {
+    "Neda": {
         "number": "1111111111",
-        "taken": false
+        "taken":false,
+        "family": [
+            "Abdias",
+            "Frida",
+            "Neda",
+            "Viridiana"
+        ]
     },
-    "Person6": {
+    "Irena": {
         "number": "1111111111",
-        "taken": false
+        "taken": false,
+        "family": [
+            "Irena",
+            "Mario",
+            "Johnathan Kaleb"
+        ]
+    },
+    "Rogelio": {
+        "number": "1111111111",
+        "taken": false,
+        "family": [
+            "Elu",
+            "Rogelio",
+            "Leo",
+            "Rosario"
+        ]
+    },
+    "Rosario": {
+        "number": "1111111111",
+        "taken": false,
+        "family": [
+            "Elu",
+            "Rogelio",
+            "Leo",
+            "Rosario"
+        ]
+    },
+    "Mario": {
+        "number": "1111111111",
+        "taken": false,
+        "family": [
+            "Irena",
+            "Mario",
+            "Johnathan Kaleb"
+        ]
+    },
+    "Johnathan Kaleb": {
+        "number": "1111111111",
+        "taken": false,
+        "family": [
+            "Irena",
+            "Mario",
+            "Johnathan Kaleb"
+        ]
+    },
+    "Leo": {
+        "number": "1111111111",
+        "taken": false,
+        "family": [
+            "Elu",
+            "Rogelio",
+            "Leo",
+            "Rosario"
+        ]
+    },
+    "Viridiana": {
+        "number": "1111111111",
+        "taken": false,
+        "family": [
+            "Abdias",
+            "Frida",
+            "Neda",
+            "Viridiana"
+        ]
     }
+
 }
